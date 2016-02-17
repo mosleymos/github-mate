@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  # Error routes
+  get 'not_found' => 'errors#not_found', :as => :not_found
+  get 'server_error' => 'errors#server_error', :as => :server_error
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
