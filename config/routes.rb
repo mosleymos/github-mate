@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  # Main routes application
+  root 'repo_contributors#search'
+
+  post 'search' => 'repo_contributors#results'
+
+  get 'search/results' => 'repo_contributors#results'
+
+  get 'repo_contributors/show'
+
   # Error routes
   get 'not_found' => 'errors#not_found', :as => :not_found
   get 'server_error' => 'errors#server_error', :as => :server_error

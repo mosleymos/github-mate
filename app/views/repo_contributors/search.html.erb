@@ -1,0 +1,9 @@
+<h1>RepoContributors#search</h1>
+<%= render :partial => 'repo_contributors_navbar' %>
+
+<p>Find me in app/views/repo_contributors/search.html.erb</p>
+
+<%= form_tag '/search', :multipart => false do %>
+    <%= search_field_tag("repo_search") %>
+    <%= submit_tag("search") %>
+<% end %>
