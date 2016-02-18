@@ -5,12 +5,12 @@
         <h3>Repository contributors</h3>
         <%# render :partial => 'repo_contributors_navbar' %>
 
-        <%= @repository_informations.each do |contributor| %>
+        <% @repository_informations.each do |contributor| %>
 
             <div class='contributor-info'>
-                <%= image_tag(contributor['avatar_url'], :alt => 'contributor avatar' :size => '62x62' ) %>
+                <%= image_tag(contributor['avatar_url'], :alt => 'contributor avatar', :size => '62x62' ) %>
                 <h3><%= contributor['login'] %></h3>
-                <h4><%= show_my_location(contributor['location'])%></h4>
+                <h5><%= show_my_location(contributor['location'])%></h4>
             </div>
 
             <br/>

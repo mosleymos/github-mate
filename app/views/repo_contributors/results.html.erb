@@ -6,8 +6,8 @@
         <%# render :partial => 'repo_contributors_navbar' %>
         <ul class='pure-menu-list'>
 
-            <%= @search_results['items'].each do |repository| %>
-                <li><%= repository['name'] %> : <%= repository['owner']['login'] %><%= link_to image_tag('github.png', :alt => 'github logo', :size =>'62x62'), repo_informations_path(:repo_name => repository['name'], :repo_owner => repository['owner']['login']) %></li>
+            <% @search_results['items'].each do |repository| %>
+                <li class='pure-menu-item'><%= link_to image_tag('github.png', :alt => 'github logo', :size =>'62x62'), repo_informations_path(:repo_name => repository['name'], :repo_owner => repository['owner']['login']) %> <%= repository['name'] %> : <%= repository['owner']['login'] %></li>
             <% end %>
 
         </ul>
