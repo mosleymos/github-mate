@@ -18,7 +18,7 @@ describe RepoContributorsController do
 
   describe "GET 'show'" do
     it "returns http success" do
-      get 'show'
+      get 'show', {:repo_name => 'mosleymos.github.io', :repo_owner => 'mosleymos'}
       response.should be_success
     end
   end
