@@ -1,10 +1,12 @@
 class RepoContributorsController < ApplicationController
-  before_action :repo_contributor_params, :ony => [:results, :show]
+  include RepositoriesAction
+  before_action :repo_contributor_params, :only => [:results, :show]
   def search
   end
 
   def results
-    @search_results = params[:repo_search]
+    @search = RepositoriesAction::Search.new
+    @search_results = @search.search_repositories(params[:repo_search])
   end
 
   def show
