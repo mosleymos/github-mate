@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'search/results' => 'repo_contributors#results'
 
-  get 'repo_contributors/show'
+  get 'search/:repo_name/:repo_owner' => 'repo_contributors#show', :as => :repo_informations
 
   # Error routes
   get 'not_found' => 'errors#not_found', :as => :not_found
