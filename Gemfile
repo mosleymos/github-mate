@@ -48,10 +48,14 @@ gem 'excon'
 # In order to store our env variables
 gem 'dotenv-rails'
 
-#group :development, :test do
-#  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-#  gem 'byebug'
-#end
+# In order to see our test coverage
+gem 'coveralls', :require => false
+
+group :development, :test do
+  # Add test coverage
+  gem 'simplecov', :require => false
+
+end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
