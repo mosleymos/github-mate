@@ -1,11 +1,22 @@
-<h1>Show repository informations</h1>
-<%= render :partial => 'repo_contributors_navbar' %>
+<div class='pure-g'>
 
-<%= @repository_informations.each do |contributor| %>
+<div class='pure-u-1-3'></div>
+    <div class='pure-u-1-3'>
+        <h3>Repository contributors</h3>
+        <%# render :partial => 'repo_contributors_navbar' %>
 
-    <h3><%= contributor['login'] %></h3>
-    <%= image_tag(contributor['avatar_url']) %>
-    <h4><%= show_my_location(contributor['location'])%></h4>
+        <%= @repository_informations.each do |contributor| %>
 
-    <br/>
-<% end %>
+            <div class='contributor-info'>
+                <%= image_tag(contributor['avatar_url'], :alt => 'contributor avatar' :size => '62x62' ) %>
+                <h3><%= contributor['login'] %></h3>
+                <h4><%= show_my_location(contributor['location'])%></h4>
+            </div>
+
+            <br/>
+        <% end %>
+    </div>
+<div class='pure-u-1-3'></div>
+
+</div>
+

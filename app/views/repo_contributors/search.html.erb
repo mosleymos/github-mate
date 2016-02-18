@@ -1,9 +1,14 @@
-<h1>RepoContributors#search</h1>
-<%= render :partial => 'repo_contributors_navbar' %>
+<div class='pure-g'>
+    <div class='pure-u-1-3'></div>
+        <div class='pure-u-1-3'>
 
-<p>Find me in app/views/repo_contributors/search.html.erb</p>
+            <h3>Search for a repository</h3>
+            <%= form_tag '/search', :multipart => false, :class => 'pure-form pure-form-stacked' do %>
+                <%= search_field_tag("repo_search",nil, :placeholder => 'Enter you repository', :maxlength => 75  ) %>
+                <%= submit_tag("search", :class => 'pure-button pure-button-primary') %>
+            <% end %>
 
-<%= form_tag '/search', :multipart => false do %>
-    <%= search_field_tag("repo_search") %>
-    <%= submit_tag("search") %>
-<% end %>
+        </div>
+    <div class='pure-u-1-3'></div>
+<%# render :partial => 'repo_contributors_navbar' %>
+</div>
