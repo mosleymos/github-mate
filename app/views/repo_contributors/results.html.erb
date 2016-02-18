@@ -2,5 +2,10 @@
 <h3>Résultats de recherche</h3>
 <%= render :partial => 'repo_contributors_navbar' %>
 <p>Find me in app/views/repo_contributors/results.html.erb</p>
-<p><%= @search_results %></p>
+
+<%= @search_results['items'].each do |e| %>
+    <p><%= e['name'] %> : <%= e['owner']['login'] %></p>
+    <%= link_to 'repos', repo_informations_path(:repo_name => e['name'], :repo_owner => e['owner']['login']) %>
+<% end %>
+
 <%= params.inspect %>

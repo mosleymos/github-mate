@@ -1,3 +1,11 @@
-<h1>RepoContributors#show</h1>
+<h1>Show repository informations</h1>
 <%= render :partial => 'repo_contributors_navbar' %>
-<p>Find me in app/views/repo_contributors/show.html.erb</p>
+
+<%= @repository_informations.each do |contributor| %>
+
+    <h3><%= contributor['login'] %></h3>
+    <%= image_tag(contributor['avatar_url']) %>
+    <h4><%= show_my_location(contributor['location'])%></h4>
+
+    <br/>
+<% end %>
