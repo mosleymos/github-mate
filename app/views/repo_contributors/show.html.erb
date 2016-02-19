@@ -26,13 +26,13 @@ TODO: Correct and move javascript in assets/js
                 <h5><%= show_my_location(contributor['location'])%></h5>
             </div>
             <%# link_to "Profil detaillé - geoloc", contributor_informations_path(:contributor_pseudo => @contributor_login) %>
-            <% if contributor['login'] %>
+            <% if contributor['location'] %>
             <iframe
                   width="600"
                   height="450"
                   frameborder="0" style="border:0"
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDH--khi08Piwv9osZvhOG15j1NqSzMHmU
-                    &q=Space+Needle,Seattle+WA" allowfullscreen>
+                  &q=<%= contributor['location'] %>" allowfullscreen>
              </iframe>
              <% end %>
 
