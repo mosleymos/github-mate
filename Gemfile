@@ -55,6 +55,9 @@ group :development, :test do
   # Add test coverage
   gem 'simplecov', :require => false
 
+  # Security static analysis
+  gem 'brakeman', :require => false
+
 end
 
 group :development do
