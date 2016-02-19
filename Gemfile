@@ -51,6 +51,9 @@ gem 'dotenv-rails'
 # In order to see our test coverage
 gem 'coveralls', :require => false
 
+# A better server
+gem 'thin'
+
 group :development, :test do
   # Add test coverage
   gem 'simplecov', :require => false
@@ -88,8 +91,4 @@ group :development do
 
   # Better errors for sure
   gem 'better_errors'
-
-  # In order to audit application security
-  gem 'brakeman', :require => false
-
 end
