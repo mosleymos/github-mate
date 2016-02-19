@@ -7,6 +7,11 @@
 
 <div class='pure-g'>
 
+<!--
+ BAD code to similart to php way of doing the things
+TODO: Correct and move javascript in assets/js
+-->
+
 <div class='pure-u-1-3'></div>
     <div class='pure-u-1-3'>
         <h3>Repository contributors</h3>
@@ -17,21 +22,21 @@
             <div class='contributor-info'>
                 <%= image_tag(contributor['avatar_url'], :alt => 'contributor avatar', :size => '62x62' ) %>
                 <h3><%= contributor['login'] %></h3>
-                <h5><%= show_my_location(contributor['location'])%></h4>
-                <div id="map<%= contributor['login'] %>" class='map'></div>
-                <script>
-                      var map;
-                      function initMap() {
-                        map = new google.maps.Map(document.getElementById("map<%= contributor['login'] %>"), {
-                          center: {lat: -34.397, lng: 150.644},
-                          zoom: 8
-                        });
-                      }
-                </script>
+                 <% @contributor_login = contributor['login'] %>
+                <h5><%= show_my_location(contributor['location'])%></h5>
             </div>
+            <%# link_to "Profil detaillé - geoloc", contributor_informations_path(:contributor_pseudo => @contributor_login) %>
+            <iframe
+                  width="600"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDH--khi08Piwv9osZvhOG15j1NqSzMHmU
+                    &q=Space+Needle,Seattle+WA" allowfullscreen>
+             </iframe>
 
             <br/>
         <% end %>
+
     </div>
 <div class='pure-u-1-3'></div>
 
