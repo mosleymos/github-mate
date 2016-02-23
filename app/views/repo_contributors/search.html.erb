@@ -4,8 +4,8 @@
 
             <h3>Search for a repository</h3>
             <%= form_tag '/search', :multipart => false, :class => 'pure-form pure-form-stacked' do %>
-                <%= search_field_tag("repo_search",nil, :placeholder => 'Enter you repository', :maxlength => 75  ) %>
-                <%= submit_tag("search", :class => 'pure-button pure-button-primary') %>
+                <%= search_field_tag('repo_search',nil, :placeholder => 'Enter you repository', :maxlength => 75  ) %>
+                <%= submit_tag('search', :class => 'pure-button pure-button-primary') %>
             <% end %>
 
         </div>
