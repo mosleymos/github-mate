@@ -12,9 +12,16 @@ describe 'Simple module to get informations from github api' do
       expect(@search.search_repositories('mosleymos.github.io')).not_to eq nil
     end
 
+    it 'should get repos contributor list' do
+      expect(@search.get_repos_contributor_list('mosleymos','mosleymos.github.io')).not_to eq nil
+    end
+
     it 'should search contributor information with is pseudo' do
       expect(@search.send(:search_contributor_informations, 'mosleymos.github.io')).not_to eq nil
     end
 
+    it 'should concat pieces of an url' do
+      expect(@search.send(:concat_url, '/users/mosleymos')).to eq 'https://api.github.com/users/mosleymos'
+    end
   end
 end
