@@ -12,6 +12,6 @@ require 'spec_helper'
 # end
 describe RepoContributorsHelper do
   it '#show_my_location' do
-    expect(show_my_location(nil)).to eq "Aucune location indiquée"
+    expect(show_my_location(nil)).to eq '<h5>Aucune location indiquée</h5>'
   end
 end
