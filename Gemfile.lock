@@ -93,7 +93,6 @@ GEM
       railties (>= 4.0, < 5.1)
     erubis (2.7.0)
     eventmachine (1.0.9.1)
-    excon (0.45.4)
     execjs (2.6.0)
     fastercsv (1.5.5)
     ffi (1.9.10)
@@ -278,7 +277,6 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   coveralls
   dotenv-rails
-  excon
   fuubar
   geocoder
   jbuilder (~> 2.0)

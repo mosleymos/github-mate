@@ -41,9 +41,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Gem in order to retrieve location
 gem 'geocoder'
 
-# Better requests
-gem 'excon'
-
 # In order to store our env variables
 gem 'dotenv-rails'
 
