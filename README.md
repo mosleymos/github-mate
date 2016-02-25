@@ -13,9 +13,12 @@ RoR application which allow us to see commiters from a repo and use geolocations
 - Integrate Geolocation
 - Integrate Github api
 - Integrate Google map
+- Create a custom polymerjs map element
+- Add more tests and use an alternative to real request (vcr ...)
 
 ### Doing
 
+- Add polymerjs
 
 ### Done
 
