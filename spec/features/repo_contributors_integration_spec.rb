@@ -19,9 +19,8 @@ end
 
 describe 'Show repository informations' do
   it 'should display repository contributor informations' do
-    visit '/search/rails/rails'
-    expect(page).to have_content 'tenderlove'
-    expect(page).to have_content 'josevalim'
-    expect(page).to have_content 'fxn'
+    visit '/search/repo/Bijoux/owner/Ataron'
+    expect(page).to have_content 'LeMagnesium'
+    expect(page).to have_content 'Ataron'
   end
 end
