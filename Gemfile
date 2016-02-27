@@ -50,12 +50,17 @@ gem 'coveralls', :require => false
 # A better server
 gem 'thin'
 
+
 group :development, :test do
   # Add test coverage
   gem 'simplecov', :require => false
 
   # Security static analysis
   gem 'brakeman', :require => false
+
+  # Mock api response
+  gem 'typhoeus'
+  gem 'vcr'
 
 end
 
