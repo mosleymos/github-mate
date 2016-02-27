@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/mosleymos
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 27 Feb 2016 15:57:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1153'
+      Status:
+      - 200 OK
+      X-RateLimit-Limit:
+      - '60'
+      X-RateLimit-Remaining:
+      - '49'
+      X-RateLimit-Reset:
+      - '1456591183'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      ETag:
+      - '"d7043561a4a4b9f9093b3cff231dfe94"'
+      Last-Modified:
+      - Sun, 21 Feb 2016 21:52:06 GMT
+      X-GitHub-Media-Type:
+      - github.v3
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - a51acaae89a7607fd7ee967627be18e4
+      X-GitHub-Request-Id:
+      - D45592A1:99A5:81DC78:56D1C76A
+    body:
+      encoding: UTF-8
+      string: '{"login":"mosleymos","id":4508460,"avatar_url":"https://avatars.githubusercontent.com/u/4508460?v=3","gravatar_id":"","url":"https://api.github.com/users/mosleymos","html_url":"https://github.com/mosleymos","followers_url":"https://api.github.com/users/mosleymos/followers","following_url":"https://api.github.com/users/mosleymos/following{/other_user}","gists_url":"https://api.github.com/users/mosleymos/gists{/gist_id}","starred_url":"https://api.github.com/users/mosleymos/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/mosleymos/subscriptions","organizations_url":"https://api.github.com/users/mosleymos/orgs","repos_url":"https://api.github.com/users/mosleymos/repos","events_url":"https://api.github.com/users/mosleymos/events{/privacy}","received_events_url":"https://api.github.com/users/mosleymos/received_events","type":"User","site_admin":false,"name":"KEITA
+        Mori","company":null,"blog":"http://mosleymos.github.io","location":"France","email":null,"hireable":null,"bio":null,"public_repos":31,"public_gists":28,"followers":18,"following":22,"created_at":"2013-05-23T10:31:00Z","updated_at":"2016-02-21T21:52:06Z"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://api.github.com/users/mosleymos
+  recorded_at: Sat, 27 Feb 2016 15:57:30 GMT
+recorded_with: VCR 3.0.1

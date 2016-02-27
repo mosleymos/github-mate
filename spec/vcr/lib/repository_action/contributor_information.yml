@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/louagej
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 27 Feb 2016 15:36:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1089'
+      Status:
+      - 200 OK
+      X-RateLimit-Limit:
+      - '60'
+      X-RateLimit-Remaining:
+      - '49'
+      X-RateLimit-Reset:
+      - '1456587436'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      ETag:
+      - '"04fb11c0b6026a81c2bd8992d83b5774"'
+      Last-Modified:
+      - Mon, 07 Dec 2015 16:54:42 GMT
+      X-GitHub-Media-Type:
+      - github.v3
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 173530fed4bbeb1e264b2ed22e8b5c20
+      X-GitHub-Request-Id:
+      - D45592A1:CE4D:271E80:56D1C287
+    body:
+      encoding: UTF-8
+      string: '{"login":"louagej","id":7229592,"avatar_url":"https://avatars.githubusercontent.com/u/7229592?v=3","gravatar_id":"","url":"https://api.github.com/users/louagej","html_url":"https://github.com/louagej","followers_url":"https://api.github.com/users/louagej/followers","following_url":"https://api.github.com/users/louagej/following{/other_user}","gists_url":"https://api.github.com/users/louagej/gists{/gist_id}","starred_url":"https://api.github.com/users/louagej/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/louagej/subscriptions","organizations_url":"https://api.github.com/users/louagej/orgs","repos_url":"https://api.github.com/users/louagej/repos","events_url":"https://api.github.com/users/louagej/events{/privacy}","received_events_url":"https://api.github.com/users/louagej/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":null,"location":null,"email":null,"hireable":null,"bio":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2014-04-08T18:27:52Z","updated_at":"2015-12-07T16:54:42Z"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://api.github.com/users/louagej
+  recorded_at: Sat, 27 Feb 2016 15:36:39 GMT
+recorded_with: VCR 3.0.1

@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/louagej/Bijoux/contributors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 27 Feb 2016 15:36:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '881'
+      Status:
+      - 200 OK
+      X-RateLimit-Limit:
+      - '60'
+      X-RateLimit-Remaining:
+      - '52'
+      X-RateLimit-Reset:
+      - '1456587436'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      ETag:
+      - '"49eb11c2d49a834c42d7f12cd31e3698"'
+      Last-Modified:
+      - Sat, 06 Sep 2014 17:35:28 GMT
+      X-GitHub-Media-Type:
+      - github.v3
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 8a5c38021a5cd7cef7b8f49a296fee40
+      X-GitHub-Request-Id:
+      - D45592A1:CE4D:271E25:56D1C285
+    body:
+      encoding: UTF-8
+      string: '[{"login":"louagej","id":7229592,"avatar_url":"https://avatars.githubusercontent.com/u/7229592?v=3","gravatar_id":"","url":"https://api.github.com/users/louagej","html_url":"https://github.com/louagej","followers_url":"https://api.github.com/users/louagej/followers","following_url":"https://api.github.com/users/louagej/following{/other_user}","gists_url":"https://api.github.com/users/louagej/gists{/gist_id}","starred_url":"https://api.github.com/users/louagej/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/louagej/subscriptions","organizations_url":"https://api.github.com/users/louagej/orgs","repos_url":"https://api.github.com/users/louagej/repos","events_url":"https://api.github.com/users/louagej/events{/privacy}","received_events_url":"https://api.github.com/users/louagej/received_events","type":"User","site_admin":false,"contributions":18}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://api.github.com/repos/louagej/Bijoux/contributors
+  recorded_at: Sat, 27 Feb 2016 15:36:37 GMT
+recorded_with: VCR 3.0.1
