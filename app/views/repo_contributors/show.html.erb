@@ -17,10 +17,7 @@ TODO: Correct and move javascript in assets/js
                 <%= show_my_location(contributor['location']) %>
             </div>
 
-            <link rel='import' href='<%= path_to_asset("proto-element.html") %>'>
-
             <% if contributor['location'] %>
-            <proto-element></proto-element>
             <iframe
                   width="600"
                   height="450"
