@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-/bin/sh: 1: q: not found
 //= require jquery_ujs
 //= require webcomponents-lite
 //= require_tree .
