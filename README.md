@@ -5,6 +5,8 @@ Github mate
 
 [![Coverage Status](https://coveralls.io/repos/github/mosleymos/github-mate/badge.svg?branch=master)](https://coveralls.io/github/mosleymos/github-mate?branch=master)
 
+[![Dependency Status](https://gemnasium.com/mosleymos/github-mate.svg)](https://gemnasium.com/mosleymos/github-mate)
+
 ## Objective
 
 RoR application which allow us to see commiters from a repo and use geolocations services
