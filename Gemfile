@@ -50,7 +50,6 @@ gem 'coveralls', :require => false
 # A better server
 gem 'thin'
 
-
 group :development, :test do
   # Add test coverage
   gem 'simplecov', :require => false
@@ -92,4 +91,11 @@ group :development do
 
   # Better errors for sure
   gem 'better_errors'
+end
+
+group :production do
+  # Serve static assets on rails
+  gem 'rails_stdout_logging'
+  gem 'rails_serve_static_assets'
+  gem 'rails_12factor'
 end
