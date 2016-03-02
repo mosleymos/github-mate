@@ -25,3 +25,7 @@ RoR application which allow us to see commiters from a repo and use geolocations
 - Integrate Travis
 - Create simple errors page
 - Integrate Rspec
+
+### Undone
+
+- Polymerize application :-> polymer-rails gem don't work for some versions of sprocket see [Issue](https://github.com/alchapone/polymer-rails/issues/73)
